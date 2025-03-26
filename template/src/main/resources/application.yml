@@ -1,0 +1,12 @@
+quarkus:
+  application:
+    name: asyncapi-quarkus-template
+  http:
+    port: 8080
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: asyncapi-group
+      auto-offset-reset: earliest
+    producer:
+      acks: all 
